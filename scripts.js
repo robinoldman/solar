@@ -1,7 +1,22 @@
-/*!
-* Start Bootstrap - Landing Page v6.0.6 (https://startbootstrap.com/theme/landing-page)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-landing-page/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".carousel-image");
+  let currentImageIndex = 0;
+
+  function showImage(index) {
+    images.forEach((image, i) => {
+      if (i === index) {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    });
+  }
+
+  function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    showImage(currentImageIndex);
+  }
+
+  showImage(currentImageIndex);
+  setInterval(nextImage, 5000); // Switch images every 5 seconds (5000 milliseconds).
+});

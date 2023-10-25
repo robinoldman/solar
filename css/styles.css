@@ -11341,10 +11341,23 @@ header.masthead {
   background-size: cover;
 }
 
+@media (min-width: 1200px) {
+  .carousel-container {
+    max-height: 500px;
+  }
+}
+
+/* Reset the max-height for smaller screens */
+@media (max-width: 1200px) {
+  .carousel-container {
+    max-height: none;
+  }
+}
+
 .logo {
   max-width: 100px; /* Adjust the maximum width as needed */
   position: absolute;
-  bottom: 20px;
+  bottom: 55%;
   left: 50%;
   transform: translate(-50%);
   z-index: 2;
@@ -11352,7 +11365,7 @@ header.masthead {
 
 .overlay {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -11363,25 +11376,120 @@ header.masthead {
 .carousel-container {
   width: 100%;
   max-width: 1600px;
-  max-height: 600px;
+
+  min-height: 300px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
 
-.carousel-image img {
+.hero-image {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-height: 100%;
+}
+
+.hero-image img {
   max-width: 100%; /* Adjust the maximum width as needed */
   height: auto;
+  min-height: 300px;
+}
+
+.btn-success {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
 }
 
 .carousel-image {
   width: 100%;
-  height: auto;
+  height: 50px; /* Set a fixed height for the hero images */
   display: none;
 }
 
 .carousel-image:first-child {
   display: block;
+}
+
+/* -------- eco4 home page */
+
+.intro-image img {
+  max-width: 100%; /* Set the maximum width to 100% of the container */
+  height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+}
+
+.intro-image img {
+  max-width: 200px; /* Set the maximum width as needed */
+  max-height: 500px; /* Set the maximum height as needed */
+  border-radius: 5px;
+}
+
+/* -------- eco4 */
+
+/* Custom styles for sections */
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 2rem;
+}
+
+.section-subheading {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Styling for lists */
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+/* Style for note */
+.note {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 1rem;
+}
+
+/* Style for strong elements */
+strong {
+  font-weight: 700;
+  color: #333;
+}
+
+/* Spacing between sections */
+section {
+  margin-bottom: 3rem;
+}
+
+/* Opaque background for a solar image */
+.solar-image {
+  position: relative;
+}
+
+/* Opaque background with image */
+.solar-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  background-image: url("../assets/img/solar/solarpanel2.jpg");
+  background-size: cover; /* Adjust to fit your design */
+  background-position: center; /* Adjust to fit your design */
 }
 
 header.masthead .masthead-subheading {

@@ -11366,9 +11366,9 @@ header.masthead {
 }
 
 .logo {
-  max-width: 100px; /* Adjust the maximum width as needed */
+  max-width: 200px; /* Adjust the maximum width as needed */
   position: absolute;
-  bottom: 55%;
+  bottom: 40%;
   left: 50%;
   transform: translate(-50%);
   z-index: 2;
@@ -11376,7 +11376,7 @@ header.masthead {
 
 .overlay {
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -11385,7 +11385,7 @@ header.masthead {
 }
 
 #services {
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #f9f9f9;
 }
 
 .carousel-container {
@@ -11403,7 +11403,9 @@ header.masthead {
 
   overflow: hidden;
 }
-
+.responsive-text {
+  font-size: 2vw; /* Adjust the initial font size as needed */
+}
 .logo img {
   max-width: 100%;
   height: auto;
@@ -11459,7 +11461,7 @@ header.masthead {
     display: none;
   }
   .logo {
-    bottom: 35%;
+    bottom: 10%;
     padding-bottom: 10px;
   }
   .sun {
@@ -11468,13 +11470,16 @@ header.masthead {
   .button-solar {
     padding-bottom: 20px;
   }
+  .responsive-text {
+    font-size: 3vw; /* Adjust the initial font size as needed */
+  }
 }
 
 /* -------- eco4 */
 
 /* Custom styles for sections */
 .section-heading {
-  font-size: 3rem;
+  font-size: 2.3rem;
   font-weight: 700;
   color: #333;
   margin-top: 2rem;
@@ -11606,7 +11611,16 @@ header.masthead .masthead-heading {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
+  height: 100px; /* Set a fixed height for the containers */
+  overflow: hidden; /* Hide overflow content */
 }
+
+#portfolio .portfolio-item .portfolio-caption * {
+  font-size: 16px; /* Initial font size */
+  line-height: 1.2; /* Adjust line height as needed */
+  white-space: normal; /* Allow text to wrap to the next line */
+}
+
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",

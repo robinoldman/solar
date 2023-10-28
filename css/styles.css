@@ -11473,6 +11473,9 @@ header.masthead {
   .responsive-text {
     font-size: 3vw; /* Adjust the initial font size as needed */
   }
+  .intro-image img {
+    max-height: 250px;
+  }
 }
 
 /* -------- eco4 */
@@ -11612,15 +11615,14 @@ header.masthead .masthead-heading {
   text-align: center;
   background-color: #fff;
   height: 100px; /* Set a fixed height for the containers */
-  overflow: hidden; /* Hide overflow content */
 }
 
 #portfolio .portfolio-item .portfolio-caption * {
-  font-size: 16px; /* Initial font size */
-  line-height: 1.2; /* Adjust line height as needed */
-  white-space: normal; /* Allow text to wrap to the next line */
+  font-size: 16px; /* Adjust the font size as needed */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",

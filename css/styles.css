@@ -11465,7 +11465,7 @@ header.masthead {
     padding-bottom: 10px;
   }
   .sun {
-    display: none;
+    font-size: 2em;
   }
   .button-solar {
     padding-bottom: 20px;
@@ -11486,7 +11486,6 @@ header.masthead {
   font-weight: 700;
   color: #333;
   margin-top: 2rem;
-  padding-bottom: 60px;
 }
 
 .intro-paragraph {
@@ -11519,7 +11518,7 @@ strong {
 
 /* Spacing between sections */
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Opaque background for a solar image */

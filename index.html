@@ -261,6 +261,9 @@
             <p class="text-muted">
               We install households with car chaging ports
             </p>
+            <button class="portfolio-link btn btn-primary "
+                data-bs-toggle="modal"
+                href="#portfolioModal10">Find out more</button>
           </div>
         </div>
       </div>
@@ -645,84 +648,71 @@
           <!-- To make this form functional, sign up at-->
           <!-- https://startbootstrap.com/solution/contact-forms-->
           <!-- to get an API token!-->
-          <form id="contactForm" action="https://formsubmit.co/simon@sr2renewables.co.uk" method="POST">
-            <div class="row align-items-stretch mb-5">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <!-- Name input-->
-                  <input
-                    class="form-control"
-                    id="name"
-                    type="name"
-                    name="name"
+<form id="contactForm" action="https://formsubmit.co/simon@sr2renewables.co.uk" method="POST">
+  <div class="form-group">
+    <!-- Name input -->
+    <input
+      class="form-control"
+      id="name"
+      type="name"
+      name="name"
+      placeholder="Your Name *"
+      data-sb-validations="required"
+    />
+    <div class="invalid-feedback" data-sb-feedback="name:required">
+      A name is required.
+    </div>
+  </div>
 
-                    placeholder="Your Name *"
-                    data-sb-validations="required"
-                  />
-                  <div
-                    class="invalid-feedback"
-                    data-sb-feedback="name:required"
-                  >
-                    A name is required.
-                  </div>
-                </div>
-                <div class="form-group">
-                  <!-- Email address input-->
-                  <input
-                    class="form-control"
-                    id="email"
-                    type="email"
-                    name="email"
-                    placeholder="Your Email *"
-                    data-sb-validations="required,email"
-                  />
-                  <div
-                    class="invalid-feedback"
-                    data-sb-feedback="email:required"
-                  >
-                    An email is required.
-                  </div>
-                  <div class="invalid-feedback" data-sb-feedback="email:email">
-                    Email is not valid.
-                  </div>
-                </div>
-                <div class="form-group mb-md-0">
-                  <!-- Phone number input-->
-                  <input
-                    class="form-control"
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    placeholder="Your Phone *"
-                    data-sb-validations="required"
-                  />
-                  <div
-                    class="invalid-feedback"
-                    data-sb-feedback="phone:required"
-                  >
-                    A phone number is required.
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group form-group-textarea mb-md-0">
-                  <!-- Message input-->
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    name="message"
-                    placeholder="Your Message *"
-                    data-sb-validations="required"
-                  ></textarea>
-                  <div
-                    class="invalid-feedback"
-                    data-sb-feedback="message:required"
-                  >
-                    A message is required.
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div class="form-group">
+    <!-- Email address input -->
+    <input
+      class="form-control"
+      id="email"
+      type="email"
+      name="email"
+      placeholder="Your Email *"
+      data-sb-validations="required,email"
+    />
+    <div class="invalid-feedback" data-sb-feedback="email:required">
+      An email is required.
+    </div>
+    <div class="invalid-feedback" data-sb-feedback="email:email">
+      Email is not valid.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <!-- Phone number input -->
+    <input
+      class="form-control"
+      id="phone"
+      name="phone"
+      type="tel"
+      placeholder="Your Phone *"
+      data-sb-validations="required"
+    />
+    <div class="invalid-feedback" data-sb-feedback="phone:required">
+      A phone number is required.
+    </div>
+  </div>
+
+  <div class="form-group">
+<select class="form-control custom-select" id="message" name="message" data-sb-validations="required">
+  
+  <option class="option" value="" disabled selected>Select a service *</option>
+  <option value="solar">Solar Installation</option>
+  <option value="car_charger">Car Charger Installations</option>
+  <option value="battery_storage">Battery Storage</option>
+  <option value="eco4_grants">Eco 4 Home Grants</option>
+  <option value="boiler_upgrade">Boiler Upgrade</option>
+  <option value="heat_pump">Air Source Heat Pump</option>
+</select></div>
+
+
+  
+</form>
+
             <!-- Submit success message-->
             <!---->
             <!-- This is what your users will see when the form-->
@@ -1197,7 +1187,7 @@ Enter your details in the form below and embark on the journey toward improved e
       tabindex="-1"
       role="dialog"
       aria-hidden="true"
-    >
+     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-bs-dismiss="modal">
@@ -1241,6 +1231,70 @@ Enter your details in the form below and embark on the journey toward improved e
         </div>
       </div>
     </div>
+    <div
+        class="portfolio-modal modal fade"
+        id="portfolioModal10"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal">
+              <img src="assets/img/close-icon.svg" alt="Close modal" />
+            </div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="modal-body">
+                    <!-- Project details-->
+                    <h2 class="text-uppercase">
+                      Car Charging
+                    </h2>
+                    <p class="item-intro text-muted"></p>
+                    <img
+                      class="img-fluid d-block mx-auto"
+                      src="./assets/img/solar/car.jpg"
+                      alt="..."
+                    />
+                    <p>
+                      Car Charging Installation <br><br>
+
+ 
+
+
+ 
+
+We only use the latest and industry standard Smart Chargers for our customers meaning that every morning you will wake to a fully charged EV. With our at-home charging solution, you'll enjoy the convenience of fast charging without the wait.
+
+Using Smart charging is the Eco-Friendly way to charge your car and reduce your carbon footprint and contribute to a cleaner planet by using clean, renewable energy sources to charge your vehicle at home. Chargers can be monitored via an App on your phone to give you the piece of mind you know how far the charge is coming along.  
+
+Smart Chargers are a Cost-Effective way to charge offering a charging solution that is affordable, hassle-free for your electric vehicle ownership.
+
+Professional Installation: Our certified technicians will install your charging station safely and efficiently, ensuring that it's ready to power up your EV without any complications.
+
+Future-Proof Investment: As electric vehicles continue to gain popularity, adding a home charging station can increase your property's value and appeal.
+
+ <br><br>
+
+ Contact Us Today on 03335770662 or fill  <a href="./index.html#contact">this</a> conrtact form and we will be in contact withih 24 hours
+                    </p>
+
+                    <button
+                      class="btn btn-primary btn-xl text-uppercase"
+                      data-bs-dismiss="modal"
+                      type="button"
+                    >
+                      <i class="fas fa-xmark me-1"></i>
+                      Return to Site
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     
     <!-- Bootstrap core JS-->

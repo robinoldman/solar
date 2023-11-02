@@ -6103,6 +6103,15 @@ fieldset:disabled .btn {
   display: block;
 }
 
+/* Add this CSS to style the small logo and center it */
+.small-logo {
+  max-width: 80px;
+  display: block;
+  margin: 0 auto;
+
+  padding-bottom: 20px;
+}
+
 .carousel-item-next:not(.carousel-item-start),
 .active.carousel-item-end {
   transform: translateX(100%);

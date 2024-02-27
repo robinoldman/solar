@@ -94,6 +94,10 @@
   box-sizing: border-box;
 }
 
+#slavery {
+  color: #000;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -293,10 +297,6 @@ sup {
   top: -0.5em;
 }
 
-a {
-  color: var(--bs-link-color);
-  text-decoration: underline;
-}
 a:hover {
   color: var(--bs-link-hover-color);
 }

@@ -665,13 +665,14 @@ Right column with the content -->
           <!-- To make this form functional, sign up at-->
           <!-- https://startbootstrap.com/solution/contact-forms-->
           <!-- to get an API token!-->
+<!-- Form starts here -->
 <form id="contactForm" action="https://formsubmit.co/simon@sr2renewables.co.uk" method="POST">
   <div class="form-group">
     <!-- Name input -->
     <input
       class="form-control"
       id="name"
-      type="name"
+      type="text"
       name="name"
       placeholder="Your Name *"
       data-sb-validations="required"
@@ -715,55 +716,48 @@ Right column with the content -->
   </div>
 
   <div class="form-group">
-<select class="form-control custom-select" id="message" name="message" data-sb-validations="required">
-  
-  <option class="option" value="" disabled selected>Select a service *</option>
-  <option value="solar">Solar Installation</option>
-  <option value="car_charger">Car Charger Installations</option>
-  <option value="battery_storage">Battery Storage</option>
-  <option value="eco4_grants">Eco 4 Home Grants</option>
-  <option value="boiler_upgrade">Boiler Upgrade</option>
-  <option value="heat_pump">Air Source Heat Pump</option>
-</select></div>
+    <!-- Service selection -->
+    <select class="form-control custom-select" id="message" name="message" data-sb-validations="required">
+      <option class="option" value="" disabled selected>Select a service *</option>
+      <option value="solar">Solar Installation</option>
+      <option value="car_charger">Car Charger Installations</option>
+      <option value="battery_storage">Battery Storage</option>
+      <option value="eco4_grants">Eco 4 Home Grants</option>
+      <option value="boiler_upgrade">Boiler Upgrade</option>
+      <option value="heat_pump">Air Source Heat Pump</option>
+    </select>
+  </div>
 
+  <!-- Submit success message-->
+  <div class="d-none" id="submitSuccessMessage">
+    <div class="text-center text-white mb-3">
+      <div class="fw-bolder">Form submission successful!</div>
+      To activate this form, sign up at
+      <br />
+      <a href="https://startbootstrap.com/solution/contact-forms"
+        >https://startbootstrap.com/solution/contact-forms</a
+      >
+    </div>
+  </div>
 
-  
+  <!-- Submit error message-->
+  <div class="d-none" id="submitErrorMessage">
+    <div class="text-center text-danger mb-3">Error sending message!</div>
+  </div>
+
+  <!-- Submit Button-->
+  <div class="text-center">
+    <button
+      class="btn btn-primary btn-xl text-uppercase"
+      id="submitButton"
+      type="submit"
+    >
+      Send Message
+    </button>
+  </div>
 </form>
+<!-- Form ends here -->
 
-            <!-- Submit success message-->
-            <!---->
-            <!-- This is what your users will see when the form-->
-            <!-- has successfully submitted-->
-            <div class="d-none" id="submitSuccessMessage">
-              <div class="text-center text-white mb-3">
-                <div class="fw-bolder">Form submission successful!</div>
-                To activate this form, sign up at
-                <br />
-                <a href="https://startbootstrap.com/solution/contact-forms"
-                  >https://startbootstrap.com/solution/contact-forms</a
-                >
-              </div>
-            </div>
-            <!-- Submit error message-->
-            <!---->
-            <!-- This is what your users will see when there is-->
-            <!-- an error submitting the form-->
-            <div class="d-none" id="submitErrorMessage">
-              <div class="text-center text-danger mb-3">
-                Error sending message!
-              </div>
-            </div>
-            <!-- Submit Button-->
-            <div class="text-center">
-              <button
-                class="btn btn-primary btn-xl text-uppercase"
-                id="submitButton"
-                type="submit"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
         </div>
       </section>
       <!-- Footer-->

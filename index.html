@@ -676,9 +676,6 @@ Right column with the content -->
       placeholder="Your Name *"
       data-sb-validations="required"
     />
-    <div class="invalid-feedback" data-sb-feedback="name:required">
-      A name is required.
-    </div>
   </div>
 
   <div class="form-group">
@@ -687,16 +684,10 @@ Right column with the content -->
       class="form-control"
       id="email"
       type="email"
-      name="email"
+      name="_replyto"
       placeholder="Your Email *"
       data-sb-validations="required,email"
     />
-    <div class="invalid-feedback" data-sb-feedback="email:required">
-      An email is required.
-    </div>
-    <div class="invalid-feedback" data-sb-feedback="email:email">
-      Email is not valid.
-    </div>
   </div>
 
   <div class="form-group">
@@ -709,26 +700,32 @@ Right column with the content -->
       placeholder="Your Phone *"
       data-sb-validations="required"
     />
-    <div class="invalid-feedback" data-sb-feedback="phone:required">
-      A phone number is required.
-    </div>
   </div>
 
   <div class="form-group">
-<select class="form-control custom-select" id="message" name="message" data-sb-validations="required">
-  
-  <option class="option" value="" disabled selected>Select a service *</option>
-  <option value="solar">Solar Installation</option>
-  <option value="car_charger">Car Charger Installations</option>
-  <option value="battery_storage">Battery Storage</option>
-  <option value="eco4_grants">Eco 4 Home Grants</option>
-  <option value="boiler_upgrade">Boiler Upgrade</option>
-  <option value="heat_pump">Air Source Heat Pump</option>
-</select></div>
+    <select class="form-control custom-select" id="message" name="message" data-sb-validations="required">
+      <option value="" disabled selected>Select a service *</option>
+      <option value="solar">Solar Installation</option>
+      <option value="car_charger">Car Charger Installations</option>
+      <option value="battery_storage">Battery Storage</option>
+      <option value="eco4_grants">Eco 4 Home Grants</option>
+      <option value="boiler_upgrade">Boiler Upgrade</option>
+      <option value="heat_pump">Air Source Heat Pump</option>
+    </select>
+  </div>
 
+  <!-- Hidden fields for advanced features -->
+  <input type="hidden" name="_subject" value="New submission!">
+  <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+  <input type="hidden" name="_captcha" value="false">
 
-  
+  <div class="text-center">
+    <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">
+      Send Message
+    </button>
+  </div>
 </form>
+
 
             <!-- Submit success message-->
             <!---->
